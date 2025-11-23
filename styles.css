@@ -1,0 +1,123 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    html {
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .main {
+        width: max-content;
+        margin:10rem  auto;
+    }
+    .flex {
+        display: flex;
+
+    }
+    .wrapper {
+        position: relative;
+        margin: 0 2rem;
+    }
+    .dot {
+        position: absolute;
+        width: 0.5rem;
+        height: 0.5rem;
+        background: gray;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+    }
+    p {
+        font-size: 0.5rem;
+    }
+    .nav-item {
+        position: relative;
+        font-size: 2rem;
+    }
+    .tooltip {
+        display:flex; 
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: max-content;
+        height: auto;
+        background-color: black;
+        border-radius: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 150%;
+        visibility:hidden;
+        opacity: 0;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        
+    }
+    .tooltip::after {
+        content:"";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        border-left: 0.35rem solid transparent;
+        border-right: 0.35rem solid transparent;
+        border-top: 0.35rem solid black;
+    }
+    .nav-item:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.2s ease;
+    }
+    .nav-item:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.2s ease;
+    }
